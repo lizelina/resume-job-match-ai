@@ -1,0 +1,121 @@
+.header {
+  height: 48px;
+  width: calc(80vw - 224px);
+  margin-top: 1%;
+  margin-bottom: 12px;
+  background-color: rgba(125, 60, 152, 1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.jobtype {
+  width: auto;
+  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.jobtype:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.joblist {
+  padding: 0;
+  border-radius: 16px;
+  margin-top: 20px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.jobitem {
+  display: flex;
+  width: calc(79vw - 224px);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.jobitem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fd_info {
+  width: calc(28vw - 132px);
+  margin-right: 20px;
+  font-size: 14px;
+  font-family: Avantt, sans-serif;
+}
+
+.fd_info ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.fd_info ul li {
+  margin-bottom: 4px;
+}
+
+.JD {
+  font-size: 14px;
+  width: calc(46vw - 132px);
+  font-family: Avantt, sans-serif;
+  overflow: auto;
+  max-height: 100px;
+}
+
+.JD::-webkit-scrollbar {
+  width: 6px;
+}
+
+.JD::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.JD ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.comm {
+  width: calc(3vw);
+  font-size: 14px;
+  margin-left: auto;
+  font-family: Avantt, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.good,
+.bad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.good:hover,
+.bad:hover {
+  background-color: #e0e0e0;
+}
+
+.good img,
+.bad img {
+  width: 20px;
+  height: 20px;
+}
